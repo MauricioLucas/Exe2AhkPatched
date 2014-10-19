@@ -99,9 +99,9 @@ LABEL_21:
 
   replace with JMP SHORT 0040163D
 
-  if ( strcmp((const char *)v3 + 12, a3) ) ; Compare passwords. True if not equal
+  if ( strcmp((const char *)v3 + 12, a3) ) // Compare passwords. True if not equal
   {
-    v14 = 5; ; function returns this value to indicate bad password
+    v14 = 5; // function returns this value to indicate bad password which is passed to the switch function
     goto LABEL_21; 
   }
   *((_DWORD *)v3 + 2) = ftell(*(FILE **)v3);
